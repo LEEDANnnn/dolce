@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOLCE&GABBANA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--미리 연결해놓자-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/풀다운세로수정중common.css">
+  <link rel="stylesheet" href="css/common_rwd.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main_rwd.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header id="dolce-hd" class="wh">
+    <div class="hd-container wrap">
+      <h1 class="logo"><a href="index.html"><img src="image/dolce_logo_wh.png" alt="로고"></a></h1> <!--로고를 누르면 첫 화면으로 나오게 연결함-->
+      <nav id="dolce-gnb">
+        <ol class="dolce-gnb clearfix">
+          <li class="depth1">
+            <a href="#">BRAND</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="#">COMPANY</a></li> <!--본사소개-->
+                <li><a href="#">HISTORY</a></li> <!--언제생겼고 어쩌고 저쩌고-->
+                <li><a href="#">ESG</a></li> <!--환경을 위해 어떤 노력을 하고-->
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">PRODUCT</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="#">PERFUME</a></li>
+                <li><a href="#">SKIN CARE</a></li>
+                <li><a href="#">MAKE UP</a></li>
+                <li><a href="#">BODY CARE</a></li>
+                <li><a href="#">HAIR CARE</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">STORE</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="#">ONLINE</a></li>
+                <li><a href="#">OFFLINE</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">CUSTOMER</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">HELP</a></li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <nav class="util-menu"> <!--float 쓰기 위한 clearfix _1. 높이지정, 2. overflow, 3. position, 4. 부모자체 float 될 때 적지 않아도 됨-->
+        <div class="lang-wrap">
+          <button class="btn-lang"><span class="blind">언어선택</span></button>
+          <div class="lang-list">
+            <a href="#">KO</a>
+            <a href="#">EN</a>
+          </div>
+        </div>
+        <button class="btn-sitemap"><span class="blind">사이트맵</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="dolce-main">
+    <section class="main-section main-section-hero">
+      <div class="hero-wrap"><!--비율 박스 짤건데, 얘 비율을 어떻게 해야하나.-->
+        <h2 class="blind">비주얼 슬라이드 배너 (키비주얼, 히어로) 영역</h2>
+        <div class="main-container hero-container">
+          <video src="./image/hero_video_ko.mp4" autoplay loop muted class="hero-video" playsinline></video><!--playsinline: 아이폰떄문에 추가하는 태그. 클래스 이름 주는 이유 : 제어해야 하니까-->
+        </div>
+      </div>
+    </section>
+
+    <section class="main-section main-section-brand">
+      <div class="wrap brand-wrap">
+        <h2 class="blind">DOLCE &<br>GABBANA BEAUTY</h2>
+        <div class="main-container brand-container"></div>
+      </div>
+    </section>
+
+    <section class="main-section main-section-product">
+      <div class="product-wrap">
+        <h2 class="blind">PRODUCT</h2>
+        <div class="main-container product-container"></div>
+      </div>
+    </section>
+    
+    <section class="main-section main-section-recommend">
+      <div class="wrap recommend-wrap">
+        <h2 class="blind">MOST LOVE ITEM</h2>
+        <div class="main-container recommend-container"></div>
+      </div>
+    </section>
+
+    <section class="main-section main-section-store">
+      <div class="wrap store-wrap">
+        <h2 class="blind">STORE LOCATION</h2>
+        <div class="main-container store-container"></div>
+      </div>
+    </section>
+
+    <section class="main-section main-section-media">
+      <div class="wrap media-wrap">
+        <h2 class="blind"><a href="#">Social Media</a></h2>
+        <div class="main-container media-container"></div>
+      </div>
+    </section>
+
+    
+  </div><!--main-->
+
+  <footer id="dolce-ft"></footer>
+  <div class="mo-gnb-sitemap bk"> <!--닫기버튼, 메뉴 전체 펼쳐놓은 것 필요-->
+    <div class="mo-gnb-top">
+      <a href="index.html" class="mo-gnb-logo"><span class="blind">처음으로</span></a>
+      <button class="btn-close"><span class="blind">닫기</span></button>
+    </div>
+    <nav id="dolce-mo-gnb">
+      <ol class="dolce-mo-gnb">
+        <li class="mo-depth1">
+          <a href="http://www.naver.com">BRAND</a>
+          <ul class="mo-depth2">
+            <li><a href="#">COMPANY</a></li> <!--본사소개-->
+            <li><a href="#">HISTORY</a></li> <!--언제생겼고 어쩌고 저쩌고-->
+            <li><a href="#">ESG</a></li> <!--환경을 위해 어떤 노력을 하고-->
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="http://www.google.com">PRODUCT</a>
+          <ul class="mo-depth2">
+            <li><a href="#">PERFUME</a></li>
+            <li><a href="#">SKIN CARE</a></li>
+            <li><a href="#">MAKE UP</a></li>
+            <li><a href="#">BODY CARE</a></li>
+            <li><a href="#">HAIR CARE</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">STORE</a>
+          <ul class="mo-depth2">
+            <li><a href="#">ONLINE</a></li>
+            <li><a href="#">OFFLINE</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">CUSTOMER</a>
+          <ul class="mo-depth2">
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a href="#">HELP</a></li>
+          </ul>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</body>
+</html>

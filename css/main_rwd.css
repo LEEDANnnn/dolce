@@ -1,0 +1,39 @@
+@charset 'utf-8';
+/* 기본, 모바일 우선 */
+
+
+/* 1. mo */
+@media screen and (max-width: 767px) {}
+
+/* 2. tb~ */
+@media screen and (min-width: 768px) {
+  #dolce-main {
+    padding-top: 78px; /* 헤더 높이 */
+  }
+  .hero-container {
+    padding-top: 56.25%; /* 75% = 4:3 비율 박스 /// 나는 가로형이라 56.25% = 16:9 비율 박스 */
+  }
+  .hero-video {
+    object-position: center center; /* -- 태블릿부터 center center */
+  }
+}
+
+/* 3. only tb */
+@media screen and (min-width: 768px) and (max-width: 1279px) {}
+
+/* 4. laptop 1280~ */
+@media screen and (min-width: 1280px) {
+  #dolce-main {
+    padding-top: 100px; /* 헤더 높이 */
+  }
+  .hero-container {
+    padding-top: 0;
+    height: calc(100vh - 100px);
+  }
+  .hero-video {
+    position: static;
+  }
+}
+
+/* 5. laptop 1921~ */
+@media screen and (min-width: 1921px) {}

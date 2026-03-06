@@ -1,0 +1,66 @@
+@charset 'utf-8';
+/* 공용 */
+#dolce-main {
+  padding-top: 49px; /* 모바일 헤더 높이 */
+}
+.main-section {
+  min-height: 100vh;
+  border-bottom: 1px solid #ccc;
+}
+.main-section h2 {
+  /* position: static; */
+}
+.main-container {}
+
+/* 비주얼 (히어로) */
+.main-section-hero {}
+.hero-wrap {}
+.hero-container { 
+  position: relative;
+  padding-top: 100%; /* 1:1 비율 박스  -- 태블릿부터 56.25% , */
+}
+.hero-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 잘려나가도 꽉 채워서 빈 곳없이 채워라 cover contain fill*/
+  object-position: center top;
+}
+
+
+/* 브랜드 아이덴티티 영역 */
+.main-section-brand {
+  padding: var(--spacing-m) 0;
+}
+.brand-wrap {}
+.brand-container {}
+
+
+/* 제품 영역 */
+.main-section-product {}
+.product-wrap {}
+.product-container {} /* .hero-brand  */
+
+
+/* 추천 영역 */
+.main-section-recommend {
+  padding: var(--spacing-m) 0;
+}
+.recommend-wrap {}
+.recommend-container {} /* .hero-recommend  */
+
+
+/* 매장소개 영역 */
+.main-section-store {
+  padding: var(--spacing-m) 0;
+}
+.store-wrap {}
+.store-container {} /* .hero-store  */
+
+
+/* 미디어 영역 */
+.main-section-media {}
+.media-wrap {}
+.media-container {} /* .hero-media  */
