@@ -5,7 +5,7 @@ $(function(){
   let speed = 300;
   let viewportW, viewportH;
   const mainMenu = ".depth1";
-  const subMenu = ".depth2-wrap"; //index&common(풀다운세로)(현대첨단산업st) , index copy&common(풀다운가로) --> 얘 기준이며 앞에 기준으로 하려면 -wrap 뺴야함
+  const subMenu = ".depth2-wrap";
   const btnLang = ".btn-lang";
   const langList = ".lang-list";
   const btnSitemap = ".btn-sitemap";
