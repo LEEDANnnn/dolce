@@ -137,7 +137,9 @@ button {
 #dolce-gnb.sub-on:before {
   height: 250px;
 }
-.depth1 {}
+.depth1 {
+  position: relative;
+}
 .depth1 > a { /* depth2 앵커에도 영향을 줘서 꺽쇠 넣어서 구분해줌 */
   display: flex;
   align-items: center;
@@ -150,22 +152,22 @@ button {
   display: none;
   position: absolute;
   left: 50%;
-  top: 100px;
-  width: 240px;
+  top: 100%;
+  width: 200px;
   padding: 24px;
+  background-color: #222;
+  font-size: 1.2em;
+  font-weight: 200;
+  transform: translateX(-50%);
 }
-.depth1:nth-child(1) .depth2-wrap {transform: translateX(-200%);}
-.depth1:nth-child(2) .depth2-wrap {transform: translateX(-100%);}
-.depth1:nth-child(3) .depth2-wrap {}
-.depth1:nth-child(4) .depth2-wrap {transform: translateX(100%);}
+
 .depth2 {
   font-size: 1.5em;
   font-weight: 200;
 }
 .depth2 li {}
 .depth2 a {}
-.util-menu {
-}
+.util-menu {}
 .util-menu button {
   color: #fff;
 }
